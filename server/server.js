@@ -2,7 +2,7 @@ import express from "express";
 import makeRoutes from './routes.js';
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://COEN296User:COEN296AIndiaMarketPlace@COEN296A-nimur.mongodb.net/COEN296A?retryWrites=true&w=majority";
+const uri = SERVER_URL;
 const app = express();
 
 MongoClient.connect(uri, {
